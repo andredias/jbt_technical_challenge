@@ -13,8 +13,10 @@ fastapi = "*"
 hypercorn = "*"
 loguru = "*"
 orjson = "*"
+PyJWT = "*"
 python = "^3.10"
 python-dotenv = "*"
+python-multipart = "*"
 uvloop = "*"
 
 [tool.poetry.dev-dependencies]

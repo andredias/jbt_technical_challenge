@@ -37,7 +37,7 @@ def setup_logger() -> None:
 def _intercept_standard_logging_messages() -> None:
     """
     Intercept standard logging messages toward loguru's logger
-    ref: https://github.com/Delgan/loguru#entirely-compatible-with-standard-logging
+    ref: https://github.com/Delgan/loguru#entirely-compatible-with-standard-logging  # noqa: E501
     """
 
     class InterceptHandler(logging.Handler):
