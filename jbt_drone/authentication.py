@@ -7,7 +7,7 @@ from jwt.exceptions import InvalidTokenError
 
 from . import config
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl='token')
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl='login')
 
 
 def get_drone_id(username: str, password: str) -> int | None:

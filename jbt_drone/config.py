@@ -23,8 +23,7 @@ SECRET_KEY: str = os.getenv('SECRET_KEY', '') or secrets.token_urlsafe(32)
 TOKEN_EXPIRE_MINUTES: timedelta = timedelta(minutes=60)
 ALGORITHM: str = 'HS256'
 
-
 # Drone data
 USERNAME: str = 'drone'
-PASSWORD: str = 'Lula2022'
+PASSWORD: str = '1234'
 DRONE_ID: int = 1

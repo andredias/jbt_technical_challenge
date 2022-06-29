@@ -13,4 +13,9 @@ Coords = tuple[float, float]
 
 class Destination(BaseModel):
     time: datetime
-    coords: Coords
+    lat: float
+    long: float
+
+    @property
+    def coords(self) -> tuple[float, float]:
+        return (self.lat, self.long)

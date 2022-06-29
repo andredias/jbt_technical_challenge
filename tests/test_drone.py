@@ -14,20 +14,24 @@ def test_drone() -> None:
     destinations = [
         Destination(
             time=datetime.now() - timedelta(minutes=10),
-            coords=(-22.8144896, -47.2555224),
+            lat=-22.8144896,
+            long=-47.2555224,
         ),
-        Destination(time=datetime.now(), coords=(-22.8186593, -47.2557496)),
+        Destination(time=datetime.now(), lat=-22.8186593, long=-47.2557496),
         Destination(
             time=datetime.now() - timedelta(minutes=15),
-            coords=(-22.8313904, -47.2718947),
+            lat=-22.8313904,
+            long=-47.2718947,
         ),
         Destination(
             time=datetime.now() - timedelta(minutes=5),
-            coords=(-22.8013904, -47.2818947),
+            lat=-22.8013904,
+            long=-47.2818947,
         ),
         Destination(
             time=datetime.now() - timedelta(minutes=1),
-            coords=(-22.7313904, -47.2718947),
+            lat=-22.7313904,
+            long=-47.2718947,
         ),
     ]
 

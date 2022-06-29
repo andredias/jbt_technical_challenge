@@ -33,11 +33,5 @@ build:
 	docker build -t jbt_drone .
 
 
-smoke_test: build
-	docker run --rm -d -p 5000:5000 --name jbt_drone jbt_drone
-	sleep 2; curl http://localhost:5000/hello
-	docker stop jbt_drone
-
-
 install_hooks:
 	@ scripts/install_hooks.sh
