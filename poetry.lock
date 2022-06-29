@@ -312,6 +312,14 @@ hpack = ">=4.0,<5"
 hyperframe = ">=6.0,<7"
 
 [[package]]
+name = "haversine"
+version = "2.5.1"
+description = "Calculate the distance between 2 points on Earth."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
 name = "hpack"
 version = "4.0.0"
 description = "Pure-Python HPACK header compression"
@@ -975,7 +983,7 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "e7ecaedb4f39b0274773fcb71b86004a3f9ecdc428d857b4a9a37becc9910746"
+content-hash = "6804fc5444420d00310cfe84765872a6e4d73c99c3dfa7eae68e3b69c11cf465"
 
 [metadata.files]
 alt-pytest-asyncio = [
@@ -1136,6 +1144,10 @@ h11 = [
 h2 = [
     {file = "h2-4.1.0-py3-none-any.whl", hash = "sha256:03a46bcf682256c95b5fd9e9a99c1323584c3eec6440d379b9903d709476bc6d"},
     {file = "h2-4.1.0.tar.gz", hash = "sha256:a83aca08fbe7aacb79fec788c9c0bac936343560ed9ec18b82a13a12c28d2abb"},
+]
+haversine = [
+    {file = "haversine-2.5.1-py2.py3-none-any.whl", hash = "sha256:6e76933a1042e6e62464b66ef686331e2798147eeedcb32b503db696d7bf0582"},
+    {file = "haversine-2.5.1.tar.gz", hash = "sha256:357e41dfddc4a0f2b1c941d92a590cac840f7ce4b3da14b45b68d968b3ad7cc7"},
 ]
 hpack = [
     {file = "hpack-4.0.0-py3-none-any.whl", hash = "sha256:84a076fad3dc9a9f8063ccb8041ef100867b1878b25ef0ee63847a5d53818a6c"},
