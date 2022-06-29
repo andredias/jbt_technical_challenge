@@ -29,7 +29,7 @@ async def test_next_coordinates(client: AsyncClient) -> None:
 
     now = datetime.now()
     drone_route._destinations = [
-        Destination(time=now, coords=(0.02, 0.02)),
+        Destination(time=now, coords=(0.04, 0.02)),
         Destination(time=now, coords=(0.01, 0.02)),
         Destination(time=now, coords=(0.02, 0.02)),
     ]
@@ -37,3 +37,10 @@ async def test_next_coordinates(client: AsyncClient) -> None:
     assert resp.status_code == 200
     data = resp.json()
     assert tuple(data) == (0.01, 0.02)
+    assert len(drone_route._destinations) == 2
+
+    resp = await client.get(url, headers=headers)
+    assert resp.status_code == 200
+    data = resp.json()
+    assert tuple(data) == (0.02, 0.02)
+    assert len(drone_route._destinations) == 1
