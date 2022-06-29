@@ -7,7 +7,7 @@ The specification is described in the file `specification.rst`.
 Installation
 ============
 
-You must have `poetry <https://python-poetry.org/>_` installed to run the project.
+You must have `poetry <https://python-poetry.org/>`_ installed to run the project.
 
 Execute:
 
